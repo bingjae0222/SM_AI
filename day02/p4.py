@@ -40,7 +40,31 @@ if __name__ == "__main__":
 
     #sw학과 학생들의 나이 합과 평균을 출력
 
+    sum = 0
+    count = 0
 
+    for data in sts:
+        if data["전공"] == 'sw':
+            sum += data["나이"]
+            count += 1
+
+
+
+
+    #전체학생 나이 합 평균
+    for st in sts:
+        sum += st["나이"]
+    print(f"합 {sum} 평균{sum/len(sts)}")
+
+
+    #sw 학생들 나이 합 평균
+
+    sum = 0
+    count = 0
+    for data in sts:
+        if data["전공"] == 'sw':
+            sum += data["나이"]
+            count += 1
 
 
 
