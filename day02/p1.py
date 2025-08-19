@@ -1,5 +1,10 @@
+def plus(a,b):
+    result = a+b
+    return result
 
-a = 10
+def minus(a,b):
+    result = a-b
+    return result
 
 
 if __name__ == '__main__':
@@ -9,14 +14,14 @@ if __name__ == '__main__':
             print("plus..")
             num1 = int(input("INPUT NUM1 : "))
             num2 = int(input("INPUT NUM2 : "))
-            result = num1 + num2
+            result = plus(num1,num2)
             print(f"plus 결과는 : {result}")
 
         elif cmd == "m":
             print("minus.")
             num1 = int(input("INPUT NUM1 : "))
             num2 = int(input("INPUT NUM2 : "))
-            result = num1 - num2
+            result = plus(num1,num2)
             print(f"minus 결과는 : {result}")
         elif cmd == "q":
             print("bye")
