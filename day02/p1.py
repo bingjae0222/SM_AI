@@ -1,10 +1,4 @@
-def plus(a,b):
-    result = a+b
-    return result
-
-def minus(a,b):
-    result = a-b
-    return result
+from my_calc.calc_func import plus,minus
 
 
 if __name__ == '__main__':
